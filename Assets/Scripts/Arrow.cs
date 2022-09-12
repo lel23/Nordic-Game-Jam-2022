@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Arrow : MonoBehaviour
 {
@@ -24,6 +25,19 @@ public class Arrow : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        
+        if (other.collider.name == "ShellCollider")
+        {
+            
+        } else if (other.collider.name == "VulnerableCollider")
+        {
+            RestartTheGame(other);
+
+        }
+    }
+
+    void RestartTheGame(Collision2D other)
+    {
+        Destroy(other.gameObject);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
