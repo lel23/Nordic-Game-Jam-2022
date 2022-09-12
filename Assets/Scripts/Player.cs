@@ -15,11 +15,17 @@ public class Player : MonoBehaviour
     public float groundCheckRadius;
 
     private Rigidbody2D rb2d;
+    private SpriteRenderer sr;
+
+    public Sprite side;
+    public Sprite crouch;
+    public Sprite jump;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -30,9 +36,13 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
+            sr.sprite = side;
+            sr.flipX = true;
         } else if (Input.GetKey(KeyCode.RightArrow))
         {
             rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
+            sr.sprite = side;
+            sr.flipX = false;
         } else
         {
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
