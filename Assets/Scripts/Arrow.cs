@@ -21,4 +21,9 @@ public class Arrow : MonoBehaviour
         rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
 
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        
+    }
 }
