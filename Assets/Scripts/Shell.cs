@@ -4,36 +4,20 @@ using UnityEngine;
 
 public class Shell : MonoBehaviour
 {
-    public Rigidbody2D rb2D;
+    public Collider2D col2D;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
+        col2D = GetComponent<Collider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //if ()
-        //RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 1);
-
-    }
-    private void OnCollisionStay(Collision collision)
+    
+    private void OnCollisionEnter(Collision other)
     {
         // If blocking
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            // Bounce object off
-            if (collision.gameObject.CompareTag("Arrow"))
-            {
-                //collision.gameObject.GetComponent<>;
-
-                // Flip arrow and move down, then destroy
-            }
-
-        }
+        
 
         // If parrying
         if (Input.GetKeyDown(KeyCode.DownArrow) && (Input.GetKeyDown(KeyCode.P)))

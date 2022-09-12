@@ -13,6 +13,7 @@ public class Arrow : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
 
     }
 
@@ -21,13 +22,19 @@ public class Arrow : MonoBehaviour
     {
         rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
 
+        if (rb2d.velocity == new Vector2(0, 0))
+        {
+            Destroy(gameObject);
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.name == "ShellCollider")
         {
-            
+            // If the arrow hits the ground, destroy it
+            BounceOff();
+
         } else if (other.collider.name == "VulnerableCollider")
         {
             RestartTheGame(other);
@@ -39,5 +46,9 @@ public class Arrow : MonoBehaviour
     {
         Destroy(other.gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void BounceOff()
+    {
+        Destroy(gameObject);
     }
 }
