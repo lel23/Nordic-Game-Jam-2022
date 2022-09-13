@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7746655030752483776}
   - component: {fileID: 7746655030752483777}
   - component: {fileID: 7746655030752483790}
-  - component: {fileID: 7746655030752483791}
+  - component: {fileID: 1307468716634801316}
   m_Layer: 0
   m_Name: StraightArrow
   m_TagString: Arrow
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  lifeTime: 2
 --- !u!60 &7746655030752483790
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -141,7 +142,7 @@ PolygonCollider2D:
       - {x: -0.22932437, y: -0.14786267}
       - {x: -0.35018438, y: -0.026760101}
       - {x: -0.3487345, y: 0.026959658}
---- !u!50 &7746655030752483791
+--- !u!50 &1307468716634801316
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -161,4 +162,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

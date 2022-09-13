@@ -9,6 +9,8 @@ public class Arrow : MonoBehaviour
     private Rigidbody2D rb2d;
     private SpriteRenderer sr;
 
+    public float lifeTime = 2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +22,11 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
+        // kill arrow after some time
+        lifeTime -= Time.deltaTime;
+        if (lifeTime <= 0) Destroy(gameObject);
 
-        if (rb2d.velocity == new Vector2(0, 0))
-        {
-            Destroy(gameObject);
-        }
+        rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
     }
 
     public void OnCollisionEnter2D(Collision2D other)
