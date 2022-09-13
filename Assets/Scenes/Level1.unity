@@ -4044,7 +4044,7 @@ Grid:
   m_GameObject: {fileID: 333234695}
   m_Enabled: 1
   m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellGap: {x: -0.059, y: -0.03, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
 --- !u!4 &333234697
@@ -4130,6 +4130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8148552973871401197, guid: d4136245f9f86304aba9007cce93916f, type: 3}
+      propertyPath: level
+      value: Level2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4136245f9f86304aba9007cce93916f, type: 3}
 --- !u!1001 &1433128158
@@ -4149,7 +4153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4906299401741908243, guid: f9b2f20d809083745a322c5d358e4e6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.58
+      value: -8.291
       objectReference: {fileID: 0}
     - target: {fileID: 4906299401741908243, guid: f9b2f20d809083745a322c5d358e4e6b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4206,7 +4210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5748862140949811539, guid: 50ff8f7b386d84c4ab07ebfbe1831caa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.473564
+      value: -8.305
       objectReference: {fileID: 0}
     - target: {fileID: 5748862140949811539, guid: 50ff8f7b386d84c4ab07ebfbe1831caa, type: 3}
       propertyPath: m_LocalPosition.z

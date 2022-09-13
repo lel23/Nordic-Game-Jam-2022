@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    private string level = "Level0";
-    private int lvl = 0;
+    public string level;
 
     public float speed = 5;
     public float jumpForce;
@@ -82,8 +81,6 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Flag"))
         {
             Debug.Log("touch");
-            lvl += 1;
-            level = "Level" + lvl;
             SceneManager.LoadScene(level);
         }
     }
