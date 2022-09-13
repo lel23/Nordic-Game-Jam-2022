@@ -9,7 +9,7 @@ public class Arrow : MonoBehaviour
     private Rigidbody2D rb2d;
     private SpriteRenderer sr;
 
-    public float lifeTime = 2;
+    public float lifeTime = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +22,11 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         // kill arrow after some time
         lifeTime -= Time.deltaTime;
         if (lifeTime <= 0) Destroy(gameObject);
+        */
 
         rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
     }
@@ -40,6 +42,10 @@ public class Arrow : MonoBehaviour
         {
             RestartTheGame(other);
 
+        }
+        else if (other.gameObject.layer == 3)
+        {
+            Destroy(gameObject);
         }
     }
 
