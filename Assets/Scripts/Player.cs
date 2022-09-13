@@ -24,14 +24,17 @@ public class Player : MonoBehaviour
     public Sprite crouch;
     public Sprite jump;
 
-    private AudioSource jumpSound;
+    private AudioSource source;
+
+    public AudioClip jumpSound;
+    public AudioClip flagGetSound;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        jumpSound = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -57,7 +60,8 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow) && grounded && !crouched)
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
-            jumpSound.Play();
+            source.clip = jumpSound;
+            source.Play();
 
         } else if (Input.GetKeyDown(KeyCode.DownArrow) && !crouched)
         {
@@ -85,6 +89,8 @@ public class Player : MonoBehaviour
     {   
         if (other.CompareTag("Flag"))
         {
+            source.clip = flagGetSound;
+            source.Play();
             SceneManager.LoadScene(level);
         }
     }

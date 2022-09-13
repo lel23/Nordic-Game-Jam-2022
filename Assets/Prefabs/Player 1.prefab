@@ -311,6 +311,9 @@ MonoBehaviour:
   side: {fileID: 46592576, guid: 6d0f1cf10e79647f7bb001c5015f1077, type: 3}
   crouch: {fileID: -1813854077, guid: 6d0f1cf10e79647f7bb001c5015f1077, type: 3}
   jump: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: d2e2d0d46e2eb824e99674351df5eb7b, type: 3}
+  deathSound: {fileID: 8300000, guid: 3c25b64f644a85841b93dbe382e2da9e, type: 3}
+  flagGetSound: {fileID: 8300000, guid: 64e099a076848324f849e767b75f6332, type: 3}
 --- !u!212 &8148552973871401192
 SpriteRenderer:
   m_ObjectHideFlags: 0
