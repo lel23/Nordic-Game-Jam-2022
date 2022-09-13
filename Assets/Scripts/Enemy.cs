@@ -29,30 +29,6 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-         * timer += Time.deltaTime;
-        Debug.Log("Timer: " + timer);
-        if (this.gameObject.CompareTag("Slime"))
-        {
-            for (int i = 0; i < 30; i++)
-            {
-                
-                vel.x *= -1;
-                Debug.Log("Velocity: " + rb2d.velocity);
-                i = 0;
-            }
-        }
-        
-        if (this.gameObject.CompareTag("Bee"))
-        {
-
-        }
-
-        if (this.gameObject.CompareTag("Cricket"))
-        {
-
-        }
-        */
 
         if ((lastTimeFired + 1 / rateOfFire) < Time.time)
         {

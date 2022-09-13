@@ -22,12 +22,6 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        // kill arrow after some time
-        lifeTime -= Time.deltaTime;
-        if (lifeTime <= 0) Destroy(gameObject);
-        */
-
         rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
     }
 
