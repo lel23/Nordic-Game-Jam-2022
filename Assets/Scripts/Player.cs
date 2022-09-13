@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    private string level = "Level0";
+    private int lvl = 0;
+
     public float speed = 5;
     public float jumpForce;
 
@@ -60,9 +64,16 @@ public class Player : MonoBehaviour
             speed *= 2;
             crouched = false;
         }
-
-
-
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Flag"))
+        {
+            Debug.Log("touch");
+            lvl += 1;
+            level = "Level" + lvl;
+            SceneManager.LoadScene(level);
+        }
+    }
 }
