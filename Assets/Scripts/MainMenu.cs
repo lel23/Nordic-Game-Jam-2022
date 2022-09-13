@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public string levelone;
+    public string levelzero;
     public GameObject credits;
 
     public void StartGame()
     {
-        SceneManager.LoadScene(levelone);
+        SceneManager.LoadScene(levelzero);
     }
 
     public void OpenCredits()
