@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Arrow
   - Slime
+  - Flag
   layers:
   - Default
   - TransparentFX

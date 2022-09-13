@@ -6,15 +6,6 @@ using UnityEngine.SceneManagement;
 public class Flag : MonoBehaviour
 {
 
-    public string level;
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("touch");
-            SceneManager.LoadScene(level);
-        }
-    }
+    
 
 }
