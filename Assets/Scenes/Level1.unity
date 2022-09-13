@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 63955348}
   - component: {fileID: 63955347}
   - component: {fileID: 63955346}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

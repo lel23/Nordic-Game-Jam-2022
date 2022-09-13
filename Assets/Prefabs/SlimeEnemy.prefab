@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 188275076150839327}
   - component: {fileID: 3059625097800286566}
   - component: {fileID: 3414586054162043675}
+  - component: {fileID: -3341876542683928278}
   m_Layer: 0
   m_Name: SlimeEnemy
-  m_TagString: Untagged
+  m_TagString: Slime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,3 +143,21 @@ MonoBehaviour:
   - {fileID: 1453361515, guid: 6d0f1cf10e79647f7bb001c5015f1077, type: 3}
   - {fileID: -263686704, guid: 6d0f1cf10e79647f7bb001c5015f1077, type: 3}
   spriteIndex: 0
+--- !u!114 &-3341876542683928278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6539223172500861298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03fc4e9b9b848b46a95cfbef7caa9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 0}
+  side: {fileID: 0}
+  hit: {fileID: 0}
+  slimeSpeed: 5
+  maxDist: 20
+  timer: 0

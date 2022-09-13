@@ -27,15 +27,17 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        Debug.Log("Timer: " + timer);
+        rb2d.velocity = new Vector2(slimeSpeed, 0);
+        Vector2 vel = rb2d.velocity;
+
         if (this.gameObject.CompareTag("Slime"))
         {
-            if (timer > 3)
+            for (int i = 0; i < 30; i++)
             {
-                rb2d.velocity = new Vector2(slimeSpeed, 0) * -1;
+                
+                vel.x *= -1;
                 Debug.Log("Velocity: " + rb2d.velocity);
-                timer = 0;
+                i = 0;
             }
         }
         /*

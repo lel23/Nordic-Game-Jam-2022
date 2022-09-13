@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 6d0f1cf10e79647f7bb001c5015f1077
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2877471580529523173
+    second: 
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -419,22 +422,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Groundv2
+      name: 
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1824
-        width: 96
-        height: 96
+        x: 0
+        y: 0
+        width: 0
+        height: 0
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ffbb061194e6346f6aced2faa914a652
-      internalID: -25932066
+      spriteID: 5e97eb03825dee720800000000000000
+      internalID: 2877471580529523173
       vertices: []
       indices: 
       edges: []
@@ -442,7 +445,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -453,10 +456,10 @@ TextureImporter:
       Player_side3: -1846346993
       Bee_side3: 552991284
       Slime_down4: -263686704
-      Groundv2: -25932066
       Slime_down1: -441405604
       Slime_down2: -459654876
       Bee_side2: 1312605136
+      : 2877471580529523173
       Player_shell: -1813854077
       Cricket_arrow_aim: -870164528
       Slime_down3: 1453361515
