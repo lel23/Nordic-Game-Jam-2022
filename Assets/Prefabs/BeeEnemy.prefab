@@ -48,9 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03fc4e9b9b848b46a95cfbef7caa9e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: 0}
   side: {fileID: 0}
   hit: {fileID: 0}
+  slimeSpeed: 5
+  maxDist: 20
+  timer: 0
+  arrowPrefab: {fileID: 2840972823806764654, guid: 6ade0ad56a6c74acd9c4f4309e313d96, type: 3}
 --- !u!212 &8625154501717473616
 SpriteRenderer:
   m_ObjectHideFlags: 0
