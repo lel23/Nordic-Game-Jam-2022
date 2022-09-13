@@ -430,7 +430,7 @@ TextureImporter:
         width: 0
         height: 0
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,10 +442,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Ground2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1824
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003c580bc86a04e6987489c1ceae4f57
+      internalID: -600391939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c3fac3c9979ef4465a8f4a2a6653cf04
     internalID: 0
     vertices: []
     indices: 
@@ -454,6 +475,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Player_side3: -1846346993
+      Ground2: -600391939
       Bee_side3: 552991284
       Slime_down4: -263686704
       Slime_down1: -441405604
