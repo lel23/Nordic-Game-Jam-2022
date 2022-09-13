@@ -37,12 +37,12 @@ public class Player : MonoBehaviour
     {
         grounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, ground);
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) && !crouched)
         {
             rb2d.velocity = new Vector2(-speed, rb2d.velocity.y);
             sr.sprite = side;
             sr.flipX = true;
-        } else if (Input.GetKey(KeyCode.RightArrow))
+        } else if (Input.GetKey(KeyCode.RightArrow) && !crouched)
         {
             rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
             sr.sprite = side;
@@ -58,16 +58,27 @@ public class Player : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.DownArrow) && !crouched)
         {
             speed /= 2;
+            sr.sprite = crouch;
+            sr.flipX = false;
             crouched = true;
         } else if (Input.GetKeyDown(KeyCode.DownArrow) && crouched)
         {
             speed *= 2;
+            sr.sprite = side;
+            sr.flipX = false;
             crouched = false;
         }
+
+        // restart the level
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-    {
+    {   
         if (other.CompareTag("Flag"))
         {
             Debug.Log("touch");
