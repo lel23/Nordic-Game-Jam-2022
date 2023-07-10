@@ -77,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -441405604, guid: 6d0f1cf10e79647f7bb001c5015f1077, type: 3}
+  m_Sprite: {fileID: -117969379, guid: 44042ee8d4495ee4d883817bd6db4ace, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.89, y: 0.54}
+  m_Size: {x: 0.84, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -155,9 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03fc4e9b9b848b46a95cfbef7caa9e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: 0}
-  side: {fileID: 0}
-  hit: {fileID: 0}
+  side: {fileID: -131409734, guid: 44042ee8d4495ee4d883817bd6db4ace, type: 3}
+  hit: {fileID: -1508752461, guid: 44042ee8d4495ee4d883817bd6db4ace, type: 3}
   slimeSpeed: 5
   maxDist: 20
   timer: 0
+  arrowPrefab: {fileID: 0}
